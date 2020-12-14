@@ -1,10 +1,9 @@
 <template>
   <div class="destaques">
-    <h1>Produtos em destaque</h1>
     <div class="cards">
       <div class="card">
         <div class="imagem">
-          <img src="../assets/images/galaxyfold.jpg" alt="" />
+          <img v-bind:src="gadgets.img" alt="gadget" />
         </div>
         <div class="cor">
           <div class="opcao"></div>
@@ -12,88 +11,45 @@
         </div>
         <div class="modelo">
           <h3>
-            Galaxy Z Fold2 5G Mystic <br />
-            Black
+              {{gadgets.model}}
           </h3>
-          <p>SM-F456FDSD6F7J</p>
+          <p>{{gadgets.serial}}</p>
         </div>
         <div class="descricao">
           <ul>
-            <li>Dobrado, é um celular. Aberto, é um tablet</li>
-            <li>Flexível para infinitas possibilidades</li>
-            <li>Bateria dupla feita para durar o dia todo</li>
+            <li>{{gadgets.specs_line_1}}</li>
+            <li>{{gadgets.specs_line_2}}</li>
+            <li>{{gadgets.specs_line_3}}</li>
           </ul>
         </div>
         <div class="valor">
-          <p>R$ 13.999,00</p>
-          <p>ou 12x de R$ 1.166,58 sem juros</p>
-        </div>
-        <div class="button">
-          <button>COMPRAR</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="imagem">
-          <img id="especial" src="../assets/images/galaxytab.jpg" alt="" />
-        </div>
-        <div class="cor">
-          <div class="opcao"></div>
-          <div class="opcao"></div>
-        </div>
-        <div class="modelo">
-          <h3>Galaxy Tab S7 LTE Preto</h3>
-          <p>SM-M3H5B67Z1M0</p>
-        </div>
-        <div class="descricao">
-          <ul>
-            <li>LCD LTPS de 120 hz</li>
-            <li>S Pen com latência ultrabaixa</li>
-            <li>Bateria inteligente de 8.000 mha</li>
-          </ul>
-        </div>
-        <div class="valor">
-          <p>R$ 6.599,00</p>
-          <p>ou 12x de R$ 549,00 sem juros</p>
-        </div>
-        <div class="button">
-          <button>COMPRAR</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="imagem">
-          <img src="../assets/images/galaxynote.jpg" alt="" />
-        </div>
-        <div class="cor">
-          <div class="opcao"></div>
-          <div class="opcao"></div>
-        </div>
-        <div class="modelo">
-          <h3>
-            Galaxy Note20 Mystic <br />
-            Bronze 256GB
-          </h3>
-          <p>SM-F456FDSD6F7J</p>
-        </div>
-        <div class="descricao">
-          <ul>
-            <li>Tela infinita</li>
-            <li>Compartilhamento de bateria sem fio</li>
-            <li>Caneta S Pen</li>
-          </ul>
-        </div>
-        <div class="valor">
-          <p>R$ 13.999,00</p>
-          <p>ou 12x de R$ 1.166,58 sem juros</p>
+          <p>{{gadgets.price}}</p>
+          <p>{{gadgets.portion}}</p>
         </div>
         <div class="button">
           <button>COMPRAR</button>
         </div>
       </div>
     </div>
+     
   </div>
+ 
 </template>
+
+<script>
+export default {
+  props: {
+    img: String,
+    model: String,
+    serial: String,
+    specs_line_1: String,
+    specs_line_2: String,
+    specs_line_3: String,
+    price: String,
+    gadgets: Object
+  },
+};
+</script>
 
 <style scoped>
 * {

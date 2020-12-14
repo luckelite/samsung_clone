@@ -71,7 +71,10 @@ export default {};
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    overflow: scroll
+    overflow: scroll;
+  }
+  .components-freteGratis ul::-webkit-scrollbar{
+    display: none;
   }
   .components-freteGratis img:nth-child(1){
     padding-left: 50px;

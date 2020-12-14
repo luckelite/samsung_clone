@@ -4,11 +4,10 @@
     <Carousel />
     <FreteGratis />
     <Categories />
-    <Destaques />
-    <Ajuda />
+    <DestaquesMain />
+    <AjudaMain />
     <ProdEServ />
     <Footer />
-
   </div>
 </template>
 
@@ -18,8 +17,8 @@ import Header from "./components/Header";
 import Carousel from './components/Carousel'
 import FreteGratis from "./components/FreteGratis";
 import Categories from "./components/Categories";
-import Destaques from "./components/Destaques";
-import Ajuda from './components/Ajuda'
+import DestaquesMain from "./components/DestaquesMain";
+import AjudaMain from './components/AjudaMain'
 import ProdEServ from './components/ProdEServ'
 import Footer from './components/Footer'
 //import Slider2 from './components/Slider2'
@@ -32,8 +31,8 @@ export default {
     Carousel,
     FreteGratis,
     Categories,
-    Destaques,
-    Ajuda,
+    DestaquesMain,
+    AjudaMain,
     ProdEServ,
     Footer,
   },
@@ -41,7 +40,7 @@ export default {
 </script>
 
 <style>
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

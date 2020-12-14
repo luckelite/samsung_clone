@@ -62,10 +62,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-
-.slides img{
-    max-width: auto;
-    height: 430px;
-}
-</style>
