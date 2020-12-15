@@ -3,7 +3,7 @@
     <div class="cards">
       <div class="card">
         <div class="imagem">
-          <img v-bind:src="helper.image" alt="image" />
+          <img :src="require('@/assets/images/' + helper.image )" alt="img" />
         </div>
         <div class="titulo">
           <p>{{ helper.title }}</p>

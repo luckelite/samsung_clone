@@ -3,7 +3,7 @@
     <div class="cards">
       <div class="card">
         <div class="imagem">
-          <img v-bind:src="gadgets.img" alt="gadget" />
+          <img :src="require('@/assets/images/' + gadgets.img + '')" alt="img" />
         </div>
         <div class="cor">
           <div class="opcao"></div>
@@ -11,33 +11,32 @@
         </div>
         <div class="modelo">
           <h3>
-              {{gadgets.model}}
+            {{ gadgets.model }}
           </h3>
-          <p>{{gadgets.serial}}</p>
+          <p>{{ gadgets.serial }}</p>
         </div>
         <div class="descricao">
           <ul>
-            <li>{{gadgets.specs_line_1}}</li>
-            <li>{{gadgets.specs_line_2}}</li>
-            <li>{{gadgets.specs_line_3}}</li>
+            <li>{{ gadgets.specs_line_1 }}</li>
+            <li>{{ gadgets.specs_line_2 }}</li>
+            <li>{{ gadgets.specs_line_3 }}</li>
           </ul>
         </div>
         <div class="valor">
-          <p>{{gadgets.price}}</p>
-          <p>{{gadgets.portion}}</p>
+          <p>{{ gadgets.price }}</p>
+          <p>{{ gadgets.portion }}</p>
         </div>
         <div class="button">
           <button>COMPRAR</button>
         </div>
       </div>
     </div>
-     
   </div>
- 
 </template>
 
 <script>
 export default {
+  
   props: {
     img: String,
     model: String,
@@ -46,8 +45,9 @@ export default {
     specs_line_2: String,
     specs_line_3: String,
     price: String,
-    gadgets: Object
+    gadgets: Object,
   },
+
 };
 </script>
 
@@ -104,9 +104,7 @@ export default {
   width: 100%;
   height: 100%;
 }
-#especial {
-  width: 300px;
-}
+
 .cor {
   width: 100%;
   display: flex;

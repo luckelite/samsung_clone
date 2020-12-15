@@ -17,7 +17,7 @@ export default {
     return {
       
       galaxyFold: {
-        img: "../images/galaxyfold.jpg",
+        img: "galaxyfold.jpg",
         model: "Galaxy Z Fold2 5G Mystic Black",
         serial: "M-F456FDSD6F7J",
         specs_line_1: "Dobrado, é um celular. Aberto, é um tablet",
@@ -27,7 +27,7 @@ export default {
         portion: "ou 12x de R$ 1.166,58 sem juros",
       },
       galaxyTab: {
-        image: "../assets/images/galaxyFold.jpg",
+        img: "galaxytab.jpg",
         model: "Galaxy Tab S7 LTE Preto",
         serial: "SM-M3H5B67Z1M0",
         specs_line_1: "LCD LTPS de 120 hz",
@@ -37,7 +37,7 @@ export default {
         portion: "ou 12x de R$ 549,00 sem juros",
       },
       galaxyNote20: {
-        image: "../assets/images/galaxyFold.jpg",
+        img: "galaxynote.jpg",
         model: "Galaxy Note20 Mystic Bronze 256GB",
         serial: "SM-M3H5B67Z1M0",
         specs_line_1: "Tela infinita",
@@ -49,9 +49,11 @@ export default {
       
     };
   },
+
   components: {
     DestaquesTemplate,
   },
+
 };
 </script>
 
