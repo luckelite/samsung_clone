@@ -2,10 +2,10 @@
   <div class="ajuda">
     <h1>Precisa de ajuda?</h1>
     <div class="cards">
-      <AjudaTemplate :helper="atendimento" />
-      <AjudaTemplate :helper="suporte" />
+      <AjudaTemplate :helper="atendimento" id="firstchild"/>
+      <AjudaTemplate :helper="suporte"  />
       <AjudaTemplate :helper="libras" />
-      <AjudaTemplate :helper="remoto" />
+      <AjudaTemplate :helper="remoto" id="lastchild"/>
     </div>
   </div>
 </template>
@@ -74,4 +74,20 @@ h1{
   display: flex;
   align-items: center;
 }
+
+@media(max-width: 1180px){
+  .cards{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+  }
+  #firstchild{
+    padding-left: 30px;
+  }
+  #lastchild{
+    padding-right: 30px;
+  }
+  
+}
+
 </style>

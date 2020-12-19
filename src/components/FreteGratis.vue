@@ -77,9 +77,8 @@ export default {};
     display: none;
   }
   .components-freteGratis img:nth-child(1){
-    padding-left: 50px;
+    margin-left: 50px;
   }
-
   .components-freteGratis img:nth-child(1),
   .components-freteGratis img:nth-child(2),
   .components-freteGratis img:nth-child(3),

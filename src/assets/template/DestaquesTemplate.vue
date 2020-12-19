@@ -110,8 +110,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 85px;
-  padding-bottom: 30px;
+  margin-top: 85px;
+  margin-bottom: 30px;
 }
 .opcao {
   width: 18px;
@@ -190,30 +190,46 @@ export default {
 }
 
 /* RESPONSIVE */
+
+@media(max-width: 1080px){
+  
+  
+}
 @media (max-width: 650px) {
   .destaques h1 {
     font-size: 1.7rem;
   }
   .destaques {
     width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   .cards {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     position: relative;
     margin: 0;
     padding: 0;
-    overflow: scroll;
     transition: 1s;
   }
   .card {
     padding-left: 40px;
     padding-right: 40px;
     width: 320px;
+    height: 750px;
   }
   .card:nth-child(1) {
     margin: 20px;
+  }
+  .imagem{
+    margin-top: 40px;
+  }
+  .cor{
+    margin-top: 20px;
+  }
+  .descricao{
+    margin-bottom: 30px;
   }
 }
 </style>

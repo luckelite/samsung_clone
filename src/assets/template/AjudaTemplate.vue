@@ -88,4 +88,24 @@ export default {
   color: rgb(82, 82, 82);
   cursor: pointer;
 }
+
+/* Responsive */
+@media(max-width: 1180px){
+
+.card{
+  height: 400px;
+}
+.imagem {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.titulo {
+  margin-bottom: 15px;
+}
+.texto {
+  height: 230px;
+  color: rgb(82, 82, 82);
+}
+
+}
 </style>

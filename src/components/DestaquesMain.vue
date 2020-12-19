@@ -2,9 +2,9 @@
   <div class="destaquesMain">
     <h1>Produtos em Destaque</h1>
     <div class="cards">
-      <DestaquesTemplate :gadgets="galaxyFold" />
+      <DestaquesTemplate :gadgets="galaxyFold" id="firstchild"/>
       <DestaquesTemplate :gadgets="galaxyTab" />
-      <DestaquesTemplate :gadgets="galaxyNote20" />
+      <DestaquesTemplate :gadgets="galaxyNote20"  id="lastchild"/>
     </div>
   </div>
 </template>
@@ -79,5 +79,24 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media(max-width: 650px){
+  .destaquesMain{
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .cards{
+    max-width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: scroll;
+  }
+  
+  #firstchild{
+    margin-left: 15px;
+  }
+  #lastchild{
+    margin-right: 15px;
+  }
 }
 </style>
