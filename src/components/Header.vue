@@ -178,4 +178,45 @@ export default {};
     margin-left: 20px;
   }
 }
+@media(max-width: 1080px){
+  .header {
+    width: 100%;
+    height: 50px;
+  }
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+  .logo p {
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 5px;
+  }
+  .nav {
+    display: none;
+  }
+  .users ul{
+    width: 100%;
+  }
+  .users ul li:nth-child(1),
+  .users ul li:nth-child(2) {
+    display: none;
+  }
+ .users ul li:nth-child(3),
+ .users ul li:nth-child(4){
+   margin-left: 5px;
+ }
+ .users ul li img:nth-child(3),
+ .users ul li img:nth-child(4){
+   width: 25px;
+   height: 25px;
+ }
+  #iconMenu {
+    display: initial;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+  }
+}
 </style>
