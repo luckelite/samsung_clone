@@ -1,5 +1,5 @@
 <template>
-  <div class="slides">
+  <div class="slides-mobile">
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -15,7 +15,7 @@
         <template #img>
           <img
             class="d-block img-fluid w-100"
-            src="../assets/images/anuncio.png"
+            src="../assets/images/slider-mobile.jpeg"
             alt="image slot"
           />
         </template>
@@ -25,8 +25,9 @@
         <template #img>
           <img
             class="d-block img-fluid w-100"
-            src="../assets/images/anunciolavadora.png"
+            src="../assets/images/slider-mobile2.jpeg"
             alt="image slot"
+
           />
         </template>
       </b-carousel-slide>
@@ -35,7 +36,17 @@
         <template #img>
           <img
             class="d-block img-fluid w-100"
-            src="../assets/images/anunciotv.png"
+            src="../assets/images/slider-mobile3.jpeg"
+            alt="image slot"
+          />
+        </template>
+      </b-carousel-slide>
+
+       <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            src="../assets/images/slider-mobile4jpeg.jpeg"
             alt="image slot"
           />
         </template>
@@ -64,5 +75,5 @@ export default {
 };
 </script>
 <style >
-  
+
 </style>

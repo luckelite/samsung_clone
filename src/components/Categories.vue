@@ -111,11 +111,18 @@ export default {};
   .img {
     margin: 0px 5px;
     width: 400px;
-    height: 200px;
+    height: 220px;
   }
   .img span {
     font-size: 1.2rem;
     padding: 25px;
+  }
+}
+@media (max-width: 770px) {
+
+  .img {
+    margin: 0px 5px;
+    width: 400px;
   }
 }
 @media (max-width: 650px) {

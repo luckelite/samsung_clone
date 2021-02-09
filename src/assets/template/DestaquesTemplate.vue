@@ -191,17 +191,13 @@ export default {
 
 /* RESPONSIVE */
 
-@media(max-width: 1080px){
-  
-  
-}
 @media (max-width: 650px) {
   .destaques h1 {
     font-size: 1.7rem;
   }
   .destaques {
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
   }
   .cards {

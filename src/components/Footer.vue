@@ -1,5 +1,7 @@
 <template>
   <div class="footer">
+    <div class="container-footer">
+ 
     <div class="copyright">
       <p>Copyright© 1995-2020 SAMSUNG. Todos os direitos reservados.</p>
       <p>
@@ -37,6 +39,7 @@
         <li><img src="../assets/images/instagram.png" alt="" /></li>
         <li><img src="../assets/images/youtube.png" alt="" /></li>
       </ul>
+    </div> 
     </div>
   </div>
 </template>
@@ -51,7 +54,10 @@
 .footer {
   width: 100%;
   height: 100%;
-  display: flex;
+ 
+}
+.container-footer{
+ display: flex;
   flex-direction: column;
 }
 .copyright {

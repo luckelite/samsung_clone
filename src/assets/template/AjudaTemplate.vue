@@ -106,6 +106,10 @@ export default {
   height: 230px;
   color: rgb(82, 82, 82);
 }
-
+}
+@media(max-width: 770px){
+  .card{
+    width: 100%;
+  }
 }
 </style>

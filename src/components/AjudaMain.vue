@@ -76,18 +76,23 @@ h1{
 }
 
 @media(max-width: 1180px){
-  .cards{
-    width: 100%;
-    overflow: scroll;
-    display: flex;
-  }
-  #firstchild{
-    padding-left: 30px;
-  }
-  #lastchild{
-    padding-right: 30px;
-  }
   
+}
+@media(max-width: 770px){
+  .ajuda{
+    margin-bottom: 0;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    
+  }
+  h1{
+  font-weight: bold;
+  font-size: 1.5em;
+}
 }
 
 </style>

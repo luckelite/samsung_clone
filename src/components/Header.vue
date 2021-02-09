@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+    <NavBarMobile />
     <div class="components-header">
       <div class="logo">
         <p>SAMSUNG</p>
@@ -19,7 +20,7 @@
           <li><img src="../assets/images/user.png" alt="user" /></li>
           <li><img src="../assets/images/market.png" alt="market" /></li>
           <li><img src="../assets/images/search.png" alt="search" /></li>
-          <li><img id="iconMenu" src="../assets/images/menu.png" alt="" /></li>
+          <li><img id="iconMenu" src="../assets/images/menu.png" alt="" @click="openbar"/></li>
         </ul>
       </div>
     </div>
@@ -27,7 +28,17 @@
 </template>
 
 <script>
-export default {};
+import NavBarMobile from './NavBarMobile'
+export default {
+  components: {
+    NavBarMobile
+  },
+  methods: { 
+    openbar(){
+        document.querySelector(".navbarmobile").style.display = "flex"
+    }
+  }
+}
 </script>
 
 <style scoped>

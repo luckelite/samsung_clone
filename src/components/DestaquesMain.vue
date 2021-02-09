@@ -91,7 +91,6 @@ h1{
     justify-content: center;
     overflow: scroll;
   }
-  
   #firstchild{
     margin-left: 15px;
   }
