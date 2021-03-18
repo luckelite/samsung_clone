@@ -1,4 +1,4 @@
-# Clone do site da shop.samsung.com
+# UI Clone do site da shop.samsung.com
 
 Contruído com a intenção de colocar em prática meus
 conhecimentos adquiridos em HTML, CSS, VUE.js
